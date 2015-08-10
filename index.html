@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body>
+	<section class="listHeader">
+		<h1>Use this page to make a list</h1>
+		<div class="addListWrapper">
+			<div class="button">Add</div>
+			<input type = "text"
+					id = "addItem"
+					value = "type here to add to list" />
+		</div>
+	</section>
+	<section class="list">
+		<div class="instructions">
+			<p>Drag items to sort list</p>
+		</div>
+		<ul>
+			<li class="listItem"><div id="circle"></div><p class="listText">test item 1</p><div id="cross"></div></li>
+			<li class="listItem"><div id="circle"></div><p class="listText">test item 2</p><div id="cross"></div></li>
+			<li class="listItem"><div id="circle"></div><p class="listText">test item 3</p><div id="cross"></div></li>
+			<li class="listItem"><div id="circleCrossed"></div><p class="listTextCrossed">test item 3</p><div id="cross"></div></li>
+		</ul>
+	</section>
+</body>
+</html>
