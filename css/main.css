@@ -81,7 +81,7 @@ ul {
 }
 
 /*draw a circle*/
-#circle {
+.circle {
 	cursor:pointer;
 	background-color:grey;
 	border:white solid 4px;
@@ -96,7 +96,7 @@ ul {
 **can i only do this with js / jquery?
 */
 
-#circle:active {
+.circle:active {
 	background-color:blue;
 	width:15px;
 	height:15px;
@@ -106,7 +106,7 @@ ul {
 
 /*draw a cross*/
 
-#cross{
+.cross{
 	cursor:pointer;
     width:25px;
     height:25px;
@@ -114,7 +114,7 @@ ul {
     margin-right:1em;
 }
 
-#cross:before,#cross:after{
+.cross:before,.cross:after{
     content:'';
     position:absolute;
     width:21px;
@@ -124,14 +124,14 @@ ul {
     top:42%;
 }
 
-#cross:before{
+.cross:before{
 	-webkit-transform:rotate(45deg);
 	-moz-transform:rotate(45deg);
 	transform:rotate(45deg);
 	left:2px;
 }
 
-#cross:after{
+.cross:after{
 	-webkit-transform:rotate(-45deg);
 	-moz-transform:rotate(-45deg);
 	transform:rotate(-45deg);
@@ -172,7 +172,7 @@ ul {
 	display:block;
 }
 
-#circleCrossed {
+.circleCrossed {
 	cursor:pointer;
 	background-color:grey;
 	border:blue solid 4px;
