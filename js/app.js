@@ -7,23 +7,27 @@ $(document).ready(function () {
 		console.log('clicked p');
 	}
 
-
-	$('.button').click(function () {
-		$('ul').append('<li class="listItem"><div class="circle"></div><p class="listText">' + $('input#addItem').val() + '</p><div class="cross"></div></li>')
-		$('.circle').off('click', crossed);
-		$('.circle').on('click', crossed);
-		console.log('clicked asdf');
-	});
-
-	$('.circle').on('click', crossed);
-	
-	$('.cross').on('click', function () {
+	function deleteFunction () {
 		$(this).closest('.listItem').fadeOut(300);
 		/*
 		want to make this delete as well
 		*/
 		console.log('asdf')
+	}
+
+	$('.button').click(function () {
+		$('ul').append('<li class="listItem"><div class="circle"></div><p class="listText">' + $('input#addItem').val() + '</p><div class="cross"></div></li>')
+		$('.circle').off('click', crossed);
+		$('.cross').off('click', deleteFunction);
+		$('.circle').on('click', crossed);
+
+		$('.cross').on('click', deleteFunction);
+		console.log('clicked asdf');
 	});
+
+	$('.circle').on('click', crossed);
+	$('.cross').on('click', deleteFunction);
+	
 
 });
 
