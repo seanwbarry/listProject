@@ -18,9 +18,8 @@ $(document).ready(function () {
 	$('.button').click(function () {
 		$('ul').append('<li class="listItem"><div class="circle"></div><p class="listText">' + $('input#addItem').val() + '</p><div class="cross"></div></li>')
 		$('.circle').off('click', crossed);
-		$('.cross').off('click', deleteFunction);
 		$('.circle').on('click', crossed);
-
+		$('.cross').off('click', deleteFunction);
 		$('.cross').on('click', deleteFunction);
 		console.log('clicked asdf');
 	});
